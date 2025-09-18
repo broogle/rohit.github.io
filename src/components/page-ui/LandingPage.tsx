@@ -66,7 +66,7 @@ export function LandingPage() {
                 }
             `}</style>
             {/* Contact links removed as requested */}
-            <div className="z-30 flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="z-30 mt-8 flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                 <Link href="https://www.linkedin.com/in/rohitushir" target="_blank" rel="noopener noreferrer">
                     <Button>LinkedIn</Button>
                 </Link>
