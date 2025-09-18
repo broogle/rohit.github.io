@@ -1,15 +1,14 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
+
 import { Button } from '@/components/ui/button';
 
 export function ProjectsSection() {
     return (
         <section id="projects" className="mx-auto w-full max-w-6xl px-6 py-16">
-            <h2 className="mb-12 text-center text-2xl font-bold text-neutral-800 dark:text-neutral-100 md:text-4xl">
-                Featured Projects
-            </h2>
-            
+            <h2 className="mb-12 text-center text-2xl font-bold text-neutral-800 dark:text-neutral-100 md:text-4xl">Featured Projects</h2>
+
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
                     <div
@@ -22,18 +21,12 @@ export function ProjectsSection() {
                                 alt={project.title}
                                 width={400}
                                 height={225}
-                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                                {project.title}
-                            </h3>
-                            {project.description && (
-                                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-                                    {project.description}
-                                </p>
-                            )}
+                            <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">{project.title}</h3>
+                            {project.description && <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">{project.description}</p>}
                             {project.tech && (
                                 <div className="mt-3 flex flex-wrap gap-2">
                                     {project.tech.map((tech, techIndex) => (

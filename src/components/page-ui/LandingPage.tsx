@@ -37,9 +37,7 @@ export function LandingPage() {
             <p className="z-30 text-xs text-neutral-600 dark:text-neutral-200 sm:text-base">Hello, I&apos;m Rohit Ushir.</p>
             <TypewriterEffectSmooth words={words} />
             <div className="z-30 max-w-2xl px-6 text-center text-sm text-neutral-700 dark:text-neutral-100 md:text-lg">
-                <p>
-                    Cloud & Enterprise Computing MSc | Experienced in building scalable backend services, APIs, and cloud-native applications
-                </p>
+                <p>Cloud & Enterprise Computing MSc | Experienced in building scalable backend services, APIs, and cloud-native applications</p>
             </div>
             <div className="z-30 mt-2 w-full overflow-hidden">
                 <div className="pointer-events-none mx-auto max-w-xl">
@@ -55,8 +53,12 @@ export function LandingPage() {
             </div>
             <style jsx>{`
                 @keyframes scrollX {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(-50%); }
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
                 }
                 .scroll-row {
                     display: inline-block;
