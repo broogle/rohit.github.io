@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     icons: [
         {
             rel: 'icon',
+            type: 'image/svg+xml',
+            url: '/favicon.svg'
+        },
+        {
+            rel: 'icon',
             type: 'image/png',
             sizes: '192x192',
             url: '/favicon/android-chrome-192x192.png'
